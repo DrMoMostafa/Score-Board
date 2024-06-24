@@ -4,7 +4,6 @@ import 'package:flutter/services.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-
   SystemChrome.setPreferredOrientations([DeviceOrientation.landscapeLeft])
       .then((_) {
     runApp(MyApp());
@@ -38,7 +37,6 @@ class _MyHomePageState extends State<MyHomePage> {
   Duration duration = Duration();
   Timer? timer;
   bool started= false;
-
 
   void _incrementCounter() {
     setState(() {
